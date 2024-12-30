@@ -1,6 +1,7 @@
 {
   "name": "@monorepo-template/scripts",
   "version": "0.0.0",
+  "type": "module",
   "dependencies": {
     "@monorepo-template/core": "*",
     "sst": "*"
@@ -9,7 +10,7 @@
     "shell": "sst shell tsx"
   },
   "devDependencies": {
-    "@types/node": "^20.14.11",
-    "tsx": "^4.7.2"
+    "@types/node": "^22",
+    "tsx": "^4"
   }
 }

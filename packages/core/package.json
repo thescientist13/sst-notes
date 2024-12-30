@@ -1,5 +1,6 @@
 {
   "name": "@monorepo-template/core",
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "test": "sst shell vitest"
@@ -14,6 +15,6 @@
     "sst": "*"
   },
   "devDependencies": {
-    "vitest": "^2.0.3"
+    "vitest": "^2"
   }
 }

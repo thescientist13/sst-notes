@@ -5,15 +5,16 @@ export default $config({
     return {
       name: "monorepo-template",
       removal: input?.stage === "production" ? "retain" : "remove",
+      protect: ["production"].includes(input?.stage),
       home: "aws",
     };
   },
   async run() {
-    await import("./infra/storage");
-    const api = await import("./infra/api");
+    const storage = await import("./infra/storage");
+    await import("./infra/api");
 
     return {
-      api: api.myApi.url,
+      MyBucket: storage.bucket.name,
     };
   },
 });
