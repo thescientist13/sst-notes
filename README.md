@@ -1,6 +1,6 @@
 # Monorepo Template
 
-A template to create a monorepo SST ❍ Ion project.
+A template to create a monorepo SST v3 project.
 
 ## Get started
 
@@ -13,7 +13,7 @@ A template to create a monorepo SST ❍ Ion project.
    cd MY_APP
    ```
 
-3. Rename the files in the project to the name of your app. 
+3. Rename the files in the project to the name of your app.
 
    ```bash
    npx replace-in-file '/monorepo-template/g' 'MY_APP' '**/*.*' --verbose
@@ -26,7 +26,7 @@ A template to create a monorepo SST ❍ Ion project.
    npx sst deploy
    ```
 
-6. Optionally, enable [_git push to deploy_](https://ion.sst.dev/docs/console/#autodeploy).
+5. Optionally, enable [_git push to deploy_](https://sst.dev/docs/console/#autodeploy).
 
 ## Usage
 
@@ -52,6 +52,12 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
    Example.hello();
    ```
 
+   We also have [Vitest](https://vitest.dev/) configured for testing this package with the `sst shell` CLI.
+
+   ```bash
+   npm test
+   ```
+
 2. `functions/`
 
    This is for your Lambda functions and it uses the `core` package as a local dependency.
@@ -72,4 +78,4 @@ In the template, we have an `api.ts`, and `storage.ts`. These export the created
 
 ---
 
-Join the SST community over on [Discord](https://discord.gg/sst) and follow us on [Twitter](https://twitter.com/SST_dev).
+**Join our community** [Discord](https://sst.dev/discord) | [YouTube](https://www.youtube.com/c/sst-dev) | [X.com](https://x.com/SST_dev)
