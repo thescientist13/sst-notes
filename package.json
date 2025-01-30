@@ -8,6 +8,9 @@
     "dev": "sst dev",
     "deploy:prod": "sst deploy --stage production"
   },
+  "overrides": {
+    "vite": "^6.0.0"
+  },
   "devDependencies": {
     "@tsconfig/node22": "^22",
     "typescript": "^5"
